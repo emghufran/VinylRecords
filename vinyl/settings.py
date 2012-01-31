@@ -1,4 +1,4 @@
-# Django settings for vinyl project.
+# Django settings for Vinyl project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -52,6 +52,9 @@ MEDIA_ROOT = ''
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
 MEDIA_URL = ''
 
+# Absolute path to the directory that holds static files like css/js/images etc.
+STATIC_DOC_ROOT = 'C:/Rajani/STS Workspace/Vinyl/src/Vinyl/vinyl/media/'
+
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
@@ -100,7 +103,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'vinyl.urls'
+ROOT_URLCONF = 'Vinyl.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -119,6 +122,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'Vinyl.vinyl',
 )
 
 # A sample logging configuration. The only tangible logging
